@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodle Services - Hosting, Administration & Development</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
+                <img src="images/moodle logo.png" alt="Moodle" class="navbar-logo me-2">
+                <span class="brand-text">A+ Learning Solutions</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses & Articulate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#integrations">Integrations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white py-5">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Moodle Solutions for Your Business</h1>
+                    <p class="lead mb-4">Professional Hosting, Administration, Development, and Support Services</p>
+                    <div class="d-flex gap-3">
+                        <a href="#services" class="btn btn-primary btn-lg">Explore Services</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- <img src="https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=600&h=400&fit=crop" alt="Moodle Solutions" class="img-fluid rounded" style="box-shadow: 0 10px 40px rgba(0,0,0,0.2);"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Our Services</h2>
+                <p class="lead text-muted">Comprehensive Moodle Solutions Tailored to Your Needs</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Service 1: Hosting -->
+                <div class="col-lg-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Moodle Hosting</h3>
+                        <p class="text-muted">Reliable and secure hosting solutions for your Moodle platform</p>
+                        <ul class="list-unstyled service-features">
+                            <li><i class="fas fa-check-circle text-success"></i> VPS Hosting</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Onsite Servers (Linux)</li>
+                            <li><i class="fas fa-check-circle text-success"></i> High Performance</li>
+                            <li><i class="fas fa-check-circle text-success"></i> 24/7 Monitoring</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Administration -->
+                <div class="col-lg-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Moodle Administration</h3>
+                        <p class="text-muted">Expert configuration and customization for your Moodle instance</p>
+                        <ul class="list-unstyled service-features">
+                            <li><i class="fas fa-check-circle text-success"></i> Configuration & Setup</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Custom Settings</li>
+                            <li><i class="fas fa-check-circle text-success"></i> User Management</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Maintenance</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Development -->
+                <div class="col-lg-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Moodle Development</h3>
+                        <p class="text-muted">Custom plugins, themes, and comprehensive course development</p>
+                        <ul class="list-unstyled service-features">
+                            <li><i class="fas fa-check-circle text-success"></i> Custom Plugins</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Dashboards & Reports</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Custom Themes</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Service 4: Coordination & Support -->
+                <div class="col-lg-6">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Moodle Coordination & Support</h3>
+                        <p class="text-muted">Training and dedicated support for your Moodle platform</p>
+                        <ul class="list-unstyled service-features">
+                            <li><i class="fas fa-check-circle text-success"></i> Staff Training</li>
+                            <li><i class="fas fa-check-circle text-success"></i> 24/7 Support</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Technical Assistance</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Best Practices Guidance</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Development & Articulate 360 Integration Section -->
+    <section id="courses" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Courses Development with Articulate 360</h2>
+                <p class="lead text-muted">Create engaging, interactive e-learning courses with industry-leading tools</p>
+                <img src="https://logodix.com/logo/238790.png" alt="Articulate Logo" class="articulate-logo-header" style="height: 80px; margin-top: 20px;">
+            </div>
+
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="articulate-features">
+                        <h3 class="fw-bold mb-4" style="color: #1a1a2e;">Professional Course Development</h3>
+                        
+                        <div class="feature-item mb-4">
+                            <div class="feature-icon-circle">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Articulate Storyline</h5>
+                                <p class="text-muted">Create interactive courses with stunning visuals, animations, and dynamic interactions. Build responsive courses that work on any device.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item mb-4">
+                            <div class="feature-icon-circle">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Video Integration</h5>
+                                <p class="text-muted">Embed high-quality videos, screen recordings, and multimedia content directly into your Moodle courses with seamless integration.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item mb-4">
+                            <div class="feature-icon-circle">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Quizzes & Assessments</h5>
+                                <p class="text-muted">Design comprehensive quizzes with branching logic, feedback, and detailed reporting to track learner progress effectively.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item mb-4">
+                            <div class="feature-icon-circle">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Mobile Responsive</h5>
+                                <p class="text-muted">All courses are optimized for mobile and tablet devices, allowing learners to access content anytime, anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="articulate-showcase">
+                        <div class="showcase-card">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="Articulate Storyline" class="img-fluid rounded-lg" style="box-shadow: 0 10px 40px rgba(255, 109, 0, 0.2); margin-bottom: 30px;">
+                            
+                            <h4 class="fw-bold mb-3">What We Offer</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #FF6D00; margin-right: 12px;"></i>
+                                    <span>Custom Course Design & Development</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #FF6D00; margin-right: 12px;"></i>
+                                    <span>Articulate Storyline & Rise 360 Creation</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #FF6D00; margin-right: 12px;"></i>
+                                    <span>Educational Video Production</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #FF6D00; margin-right: 12px;"></i>
+                                    <span>Instructional Design Services</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #FF6D00; margin-right: 12px;"></i>
+                                    <span>Interactive Simulations & Scenarios</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #FF6D00; margin-right: 12px;"></i>
+                                    <span>SCORM/xAPI Compliance</span>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #FF6D00; margin-right: 12px;"></i>
+                                    <span>Accessibility Compliance (WCAG 2.1)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center mt-5">
+                <a href="#contact" class="btn btn-primary btn-lg">Start Course Development Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section id="integrations" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Seamless Integrations</h2>
+                <p class="lead text-muted">Connect your Moodle platform with the tools you already use</p>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="integration-tabs mb-5">
+                <ul class="nav nav-tabs justify-content-center" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active integration-tab-btn" id="crm-tab" data-bs-toggle="tab" data-bs-target="#crm-content" type="button" role="tab">CRM Integration</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link integration-tab-btn" id="communication-tab" data-bs-toggle="tab" data-bs-target="#communication-content" type="button" role="tab">Communication</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link integration-tab-btn" id="assessment-tab" data-bs-toggle="tab" data-bs-target="#assessment-content" type="button" role="tab">Assessment & Proctoring</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link integration-tab-btn" id="productivity-tab" data-bs-toggle="tab" data-bs-target="#productivity-content" type="button" role="tab">Productivity Tools</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- CRM Integration Tab -->
+                <div class="tab-pane fade show active" id="crm-content" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-users-cog"></i>
+                                </div>
+                                <h5>Salesforce CRM</h5>
+                                <p>Seamlessly sync student and course data with Salesforce. Manage student relationships and track enrollment pipeline efficiently.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> Two-way data synchronization</li>
+                                    <li><i class="fas fa-check"></i> Automated enrollment workflow</li>
+                                    <li><i class="fas fa-check"></i> Real-time reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h5>HubSpot Integration</h5>
+                                <p>Connect Moodle with HubSpot to automate lead scoring and student nurturing campaigns. Track engagement metrics automatically.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> Lead scoring automation</li>
+                                    <li><i class="fas fa-check"></i> Email marketing sync</li>
+                                    <li><i class="fas fa-check"></i> Contact synchronization</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-window-maximize"></i>
+                                </div>
+                                <h5>Website LMS Portal</h5>
+                                <p>Embed Moodle courses directly into your website. Provide seamless learning experience without leaving your site.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> Custom course embedding</li>
+                                    <li><i class="fas fa-check"></i> Single sign-on (SSO)</li>
+                                    <li><i class="fas fa-check"></i> Responsive design</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-address-book"></i>
+                                </div>
+                                <h5>Active Directory/LDAP</h5>
+                                <p>Integrate with your organization's directory services. Automate user provisioning and maintain centralized access control.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> Automatic user sync</li>
+                                    <li><i class="fas fa-check"></i> Group management</li>
+                                    <li><i class="fas fa-check"></i> Security compliance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Communication Tab -->
+                <div class="tab-pane fade" id="communication-content" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <h5>Zoom Integration</h5>
+                                <p>Embed live Zoom meetings directly in Moodle courses. Enable real-time virtual classrooms with one-click meeting scheduling.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> One-click meeting creation</li>
+                                    <li><i class="fas fa-check"></i> Recording storage</li>
+                                    <li><i class="fas fa-check"></i> Attendance tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h5>Microsoft Teams</h5>
+                                <p>Connect Moodle courses with Microsoft Teams for seamless communication and collaboration in a unified platform.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> Team channel creation</li>
+                                    <li><i class="fas fa-check"></i> Chat integration</li>
+                                    <li><i class="fas fa-check"></i> File sharing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h5>Email & Notification Systems</h5>
+                                <p>Configure advanced email templates and notification systems. Send targeted communications based on student activities and milestones.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> Custom email templates</li>
+                                    <li><i class="fas fa-check"></i> Automated notifications</li>
+                                    <li><i class="fas fa-check"></i> SMS integration</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h5>Slack Integration</h5>
+                                <p>Keep your team notified with real-time Slack notifications about course activities and student engagement metrics.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> Real-time alerts</li>
+                                    <li><i class="fas fa-check"></i> Bot commands</li>
+                                    <li><i class="fas fa-check"></i> Channel integration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assessment & Proctoring Tab -->
+                <div class="tab-pane fade" id="assessment-content" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-clipboard-check"></i>
+                                </div>
+                                <h5>Turnitin Plagiarism Detection</h5>
+                                <p>Seamlessly check student submissions for plagiarism. Provide originality reports and feedback directly within Moodle assignments.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> Plagiarism detection</li>
+                                    <li><i class="fas fa-check"></i> Originality reports</li>
+                                    <li><i class="fas fa-check"></i> Teaching integrity features</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                                <h5>Remote Proctoring</h5>
+                                <p>Administer secure, proctored exams with AI-powered monitoring. Ensure test integrity while maintaining student privacy.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> AI proctoring</li>
+                                    <li><i class="fas fa-check"></i> ID verification</li>
+                                    <li><i class="fas fa-check"></i> Test security</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <h5>Advanced Analytics</h5>
+                                <p>Leverage powerful analytics integrations to track learning outcomes and predict student success with data-driven insights.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> Learning analytics</li>
+                                    <li><i class="fas fa-check"></i> Predictive modeling</li>
+                                    <li><i class="fas fa-check"></i> Custom dashboards</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h5>xAPI/Caliper Integration</h5>
+                                <p>Track detailed learning experiences using xAPI and Caliper standards. Send learning records to your learning record store.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> Experience API support</li>
+                                    <li><i class="fas fa-check"></i> Learning records</li>
+                                    <li><i class="fas fa-check"></i> Interoperability</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Productivity Tools Tab -->
+                <div class="tab-pane fade" id="productivity-content" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-table"></i>
+                                </div>
+                                <h5>Google Workspace</h5>
+                                <p>Integrate Google Docs, Sheets, and Meet. Enable collaborative learning within Moodle using familiar Google tools.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> Google Meet embedding</li>
+                                    <li><i class="fas fa-check"></i> Docs collaboration</li>
+                                    <li><i class="fas fa-check"></i> Calendar sync</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-cloud"></i>
+                                </div>
+                                <h5>Microsoft Office 365</h5>
+                                <p>Connect with Office 365 for document creation and real-time collaboration. Use OneDrive for content storage.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> Office integration</li>
+                                    <li><i class="fas fa-check"></i> OneDrive storage</li>
+                                    <li><i class="fas fa-check"></i> OneNote sync</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-dropbox"></i>
+                                </div>
+                                <h5>Cloud Storage</h5>
+                                <p>Connect Dropbox, OneDrive, or AWS S3 for secure file storage and easy course content management.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> Multi-cloud support</li>
+                                    <li><i class="fas fa-check"></i> File management</li>
+                                    <li><i class="fas fa-check"></i> Backup solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="integration-card">
+                                <div class="integration-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <h5>API & Custom Integration</h5>
+                                <p>Build custom integrations with any third-party tool using Moodle's comprehensive REST API and web services.</p>
+                                <ul class="integration-features">
+                                    <li><i class="fas fa-check"></i> REST API access</li>
+                                    <li><i class="fas fa-check"></i> Custom development</li>
+                                    <li><i class="fas fa-check"></i> Webhook support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center mt-5">
+                <a href="#contact" class="btn btn-primary btn-lg">Request Integration Setup</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Why Choose Us</h2>
+                <p class="lead text-muted">Industry-leading expertise and commitment to your success</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="feature-box">
+                        <i class="fas fa-star"></i>
+                        <h5 class="mt-3">Expert Team</h5>
+                        <p>Certified Moodle professionals with years of experience</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-box">
+                        <i class="fas fa-shield-alt"></i>
+                        <h5 class="mt-3">Security First</h5>
+                        <p>Enterprise-grade security and data protection</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-box">
+                        <i class="fas fa-clock"></i>
+                        <h5 class="mt-3">24/7 Support</h5>
+                        <p>Always available when you need us</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-box">
+                        <i class="fas fa-rocket"></i>
+                        <h5 class="mt-3">Performance</h5>
+                        <p>Optimized for speed and reliability</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-box">
+                        <i class="fas fa-users"></i>
+                        <h5 class="mt-3">Custom Solutions</h5>
+                        <p>Tailored to your specific needs</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-box">
+                        <i class="fas fa-handshake"></i>
+                        <h5 class="mt-3">Partnership Approach</h5>
+                        <p>We're invested in your long-term success</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Flexible Pricing Plans</h2>
+                <p class="lead text-muted">Choose the plan that fits your needs</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="pricing-card">
+                        <h5 class="text-center">Hosting Starter</h5>
+                        <div class="price">$29<span>/mo</span></div>
+                        <ul class="list-unstyled pricing-features">
+                            <li><i class="fas fa-check"></i> VPS Hosting</li>
+                            <li><i class="fas fa-check"></i> 100GB Storage</li>
+                            <li><i class="fas fa-check"></i> Monthly Backup</li>
+                            <li><i class="fas fa-times text-muted"></i> Premium Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary w-100">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="pricing-card featured">
+                        <h5 class="text-center">Admin Pro</h5>
+                        <div class="price">$49<span>/mo</span></div>
+                        <ul class="list-unstyled pricing-features">
+                            <li><i class="fas fa-check"></i> Full Configuration</li>
+                            <li><i class="fas fa-check"></i> Custom Settings</li>
+                            <li><i class="fas fa-check"></i> User Management</li>
+                            <li><i class="fas fa-check"></i> Priority Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary w-100">Choose Plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="pricing-card">
+                        <h5 class="text-center">Development</h5>
+                        <div class="price">Custom</div>
+                        <ul class="list-unstyled pricing-features">
+                            <li><i class="fas fa-check"></i> Custom Plugins</li>
+                            <li><i class="fas fa-check"></i> Theme Design</li>
+                            <li><i class="fas fa-check"></i> Course Development</li>
+                            <li><i class="fas fa-check"></i> Full Support</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary w-100">Quote Request</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="pricing-card">
+                        <h5 class="text-center">Support Package</h5>
+                        <div class="price">$99<span>/mo</span></div>
+                        <ul class="list-unstyled pricing-features">
+                            <li><i class="fas fa-check"></i> Training Programs</li>
+                            <li><i class="fas fa-check"></i> 24/7 Support</li>
+                            <li><i class="fas fa-check"></i> Consultation</li>
+                            <li><i class="fas fa-check"></i> Dedicated Manager</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary w-100">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Get in Touch</h2>
+                <p class="lead text-muted">Ready to transform your Moodle experience?</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm" class="needs-validation">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Service of Interest</label>
+                            <select class="form-select" id="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="hosting">Moodle Hosting</option>
+                                <option value="admin">Moodle Administration</option>
+                                <option value="development">Moodle Development</option>
+                                <option value="support">Moodle Coordination & Support</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                    <h5>Phone</h5>
+                    <p><a href="tel:+92 3007735961" class="text-decoration-none">+92 3007735961</a></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                    <h5>Email</h5>
+                    <p><a href="mailto:info@moodleexperts.com" class="text-decoration-none">fakharaleem26@gmail.com</a></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                    <h5>Location</h5>
+                    <p>Global Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>MoodleExperts</h5>
+                    <p>Your trusted partner for all Moodle solutions.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#services" class="text-decoration-none text-light">Hosting</a></li>
+                        <li><a href="#services" class="text-decoration-none text-light">Administration</a></li>
+                        <li><a href="#services" class="text-decoration-none text-light">Development</a></li>
+                        <li><a href="#services" class="text-decoration-none text-light">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center">
+                <p>&copy; 2026 MoodleExperts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
