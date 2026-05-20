@@ -75,9 +75,9 @@ function validateForm(data) {
 // 1) Create a Google Sheet
 // 2) Add Apps Script with a doPost(e) handler
 // 3) Deploy as Web App and copy the URL below
-const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwCNDIGvy-ja73M40yo6G0zPQ-0SEbZF_rxnvq4o1viMgLrTVHIDY54VipXQQFjFOh1/exec';
+const GOOGLE_SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwKq7--yGnZpNsYLFpxVsCINocL956DYDD18R0f0F4K8BB1yT6_3IlzoBL2n0rTQ2E/exec';
 // Optional fallback endpoint (e.g. Formspree). If you have a Formspree endpoint, paste it here.
-const FORMSPREE_ENDPOINT = '';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mdajeowk';
 
 // Form Submission Function
 function submitForm(data, submitBtn) {
@@ -122,15 +122,25 @@ function submitForm(data, submitBtn) {
 
             fetch(FORMSPREE_ENDPOINT, {
                 method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
                 body: fallbackData
             })
             .then(fbResp => {
                 if (fbResp.ok) {
-                    showAlert('Thank you! Your message was sent successfully (fallback).', 'success');
-                    document.getElementById('contactForm').reset();
+                    return fbResp.json().then(() => {
+                        showAlert('Thank you! Your message was sent successfully (fallback).', 'success');
+                        document.getElementById('contactForm').reset();
+                    });
                 } else {
-                    showAlert('Unable to send message. Please try again later.', 'error');
-                    console.error('Formspree fallback failed:', fbResp);
+                    return fbResp.json().then(errJson => {
+                        showAlert('Unable to send message. Please try again later.', 'error');
+                        console.error('Formspree fallback failed:', errJson);
+                    }).catch(() => {
+                        showAlert('Unable to send message. Please try again later.', 'error');
+                        console.error('Formspree fallback failed with non-json response:', fbResp);
+                    });
                 }
             })
             .catch(fbErr => {
